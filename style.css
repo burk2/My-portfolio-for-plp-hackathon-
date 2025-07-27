@@ -1,0 +1,400 @@
+/* General Body and Container Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Primary font for body text */
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: navy; /* Changed from #2c3e50 to navy as per your original */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; /* Makes the header stick to the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Increased size to match your original */
+    font-family: 'Montserrat', sans-serif; /* Heading font */
+}
+
+header p { /* Added style for header tagline */
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center nav items on smaller screens */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0066cc; /* Blue on hover, consistent with your original */
+}
+
+/* Hero/About Section */
+.hero {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 80px 0;
+    text-align: center;
+    min-height: 70vh; /* Takes up most of the viewport height */
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.about-content .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid navy; /* Changed border color to navy */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 2.2rem; /* Adjusted to match other h2s */
+    color: navy; /* Consistent with your original */
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify; /* Make paragraph text justify for better readability */
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: navy; /* Consistent with your original */
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: navy; /* Consistent with your original */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section-bg {
+    background-color: #ecf0f1; /* Alternate background for sections */
+}
+
+/* Education Section */
+.education-item {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-item h3 {
+    color: navy; /* Consistent with your original */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.cv-download {
+    margin-top: 30px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills-grid span {
+    background-color: navy; /* Consistent with your original */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skills-grid span:hover {
+    background-color: #004d99; /* Darker navy on hover */
+    transform: translateY(-3px);
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    color: navy; /* Consistent with your original */
+    margin-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows description to take available space */
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Direct Contact Info Styling */
+.contact-info-direct {
+    margin-top: 30px;
+    margin-bottom: 20px; /* Space between direct info and social links */
+    text-align: center;
+}
+
+.contact-info-direct p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-info-direct a {
+    color: navy; /* Consistent with your theme */
+    font-weight: bold;
+}
+
+.contact-info-direct a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Makes icons black */
+}
+
+.social-links img:hover {
+    transform: translateY(-5px);
+    filter: invert(24%) sepia(89%) saturate(3587%) hue-rotate(195deg) brightness(97%) contrast(97%); /* Makes icons blue on hover */
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: navy; /* Consistent with your original */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none; /* For button element */
+    cursor: pointer; /* For button element */
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #004d99; /* Darker navy on hover */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #555; /* A different color for a secondary button */
+    margin-left: 10px; /* Space between primary and secondary buttons */
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* A bit darker for better contrast */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .about-content .profile-pic {
+        margin-right: 40px; /* Space between image and text */
+    }
+
+    header nav ul {
+        justify-content: flex-end; /* Align nav items to the right */
+    }
+}
+
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 5px; /* Adjust spacing */
+    }
+    header p { /* Adjust tagline spacing on small screens */
+        margin-bottom: 15px;
+    }
+
+    header nav ul li {
+        margin: 5px 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+}
