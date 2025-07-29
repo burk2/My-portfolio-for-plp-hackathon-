@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, created for the **Power Learn Project (PLP) July 2025 Hackathon**. This portfolio showcases my background, technical skills, and real-world AI and data science projects.
 
- **Live Website:** [Click here to view](https://your-username.github.io/nollin-portfolio/)  
+ **Live Website:** [Click here to view](https://burk2.github.io/My-portfolio-for-plp-hackathon-/)  
  **Download CV:** Available on the website
 
 #  About Me
